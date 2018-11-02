@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "627122678683",
+    "firebase_url": "https://diet4happlication-1adfd.firebaseio.com",
+    "project_id": "diet4happlication-1adfd",
+    "storage_bucket": "diet4happlication-1adfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627122678683:android:0b8319ff46e003cd",
+        "android_client_info": {
+          "package_name": "com.example.hp.diet4happlication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627122678683-hj6toh60krsle4v72u9j1viqvpfpnugl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMVqTCvQedB8IhV4PvcB4FzHKtngqKRVo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

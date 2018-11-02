@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pdashboard"
+            android:icon="@drawable/icon"
+            android:title="Patient Dashboard" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="User Profile" />
+        <item
+            android:id="@+id/nav_subscription"
+            android:icon="@drawable/subscription"
+            android:title="Subscription" />
+        <item
+            android:id="@+id/nav_guidelines"
+            android:icon="@drawable/guidelines"
+            android:title="GuideLines" />
+        <item
+            android:id="@+id/nav_bookappoinment"
+            android:icon="@drawable/bookapp"
+            android:title="Book An Appoinment" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_customersupport"
+            android:icon="@drawable/customersupport"
+            android:title="Customer Support" />
+        <item
+            android:id="@+id/nav_aboutapp"
+            android:icon="@drawable/aboutapp"
+            android:title="About App" />
+        <item
+            android:id="@+id/nav_privacypolicy"
+            android:icon="@drawable/privacy"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/nav_tfaqs"
+            android:icon="@drawable/faqs"
+            android:title="Testimonials  FeedBack FAQs" />
+        <item
+            android:id="@+id/nav_rateapp"
+            android:icon="@drawable/rateapp"
+            android:title="Rate App" />
+
+        <item
+            android:id="@+id/nav_refertofriends"
+            android:icon="@drawable/refer"
+            android:title="Refer to Friends " />
+        <item
+            android:id="@+id/nav_termsconditions"
+            android:icon="@drawable/terms"
+            android:title="Terms And Conditions " />
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/ic_call_black_24dp"
+            android:title="Contact Us " />
+
+    </group>
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+-->
+</menu>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/id_rv_fooddiary">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_linearlayout_fooddiary"
+        android:layout_below="@+id/id_rv_fooddiary">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_btn_meal"
+            android:textColor="#FFF"
+            android:layout_weight="0.2"
+            android:layout_margin="5dp"
+            android:background="@drawable/myloginbutton"
+            android:text="meal"
+            />
+
+        <Button
+            android:id="@+id/id_btn_workout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_margin="5dp"
+            android:background="@drawable/myloginbutton"
+            android:textColor="#FFF"
+            android:layout_alignParentTop="true"
+            android:text="work out" />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/id_linearlayout_fooddiary"
+        android:id="@+id/rv_fooddiary2">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_linearlayout_fooddiary2"
+        android:layout_below="@+id/rv_fooddiary2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_btn_gaincal"
+            android:textColor="#FFF"
+            android:layout_weight="0.2"
+            android:layout_margin="5dp"
+            android:background="@drawable/myloginbutton"
+            android:text="27"
+            />
+
+        <Button
+            android:id="@+id/id_btn_burncal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_margin="5dp"
+            android:background="@drawable/myloginbutton"
+            android:textColor="#FFF"
+            android:text="29" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_txtview_burn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_linearlayout_fooddiary2"
+        android:layout_alignRight="@+id/id_linearlayout_fooddiary2"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorOrange"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="10dp"
+        android:text="Burn Calaries"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/id_txtview_gain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_linearlayout_fooddiary2"
+        android:text="Gained Calaries"
+        android:textColor="@color/colorOrange"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_margin="10dp"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+
+   <ImageView
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:id="@+id/ProfileImage"
+       android:layout_gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext_name"
+        android:hint="Full Name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext_mobileno"
+        android:hint="Mobile No"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/spinner_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp">
+
+    </android.support.v7.widget.AppCompatSpinner>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittxt_address"
+        android:hint="Address"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male"
+            android:id="@+id/rb_male"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/rv_female"/>
+    </RadioGroup>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="   DOB"
+       android:textSize="20sp"
+       android:id="@+id/txtview_dob"
+       />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:background="@drawable/myloginbutton"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

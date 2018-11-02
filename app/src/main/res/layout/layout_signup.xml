@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/d4hlogo"
+        android:id="@+id/iv_logosignup"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/iv_logosignup"
+        android:id="@+id/linearlayoutsignup1">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtinputlayoutemailsign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_above="@+id/txtinputlayoutpasssign">
+
+            <EditText
+                android:id="@+id/edittext_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Email"
+                android:textSize="25sp" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtinputlayoutpasssign"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/edittextsignuppassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint=" Password"
+                android:textSize="25sp" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_signup"
+        android:layout_below="@+id/linearlayoutsignup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:text="Sign Up"
+        android:background="@drawable/myloginbutton"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayoutsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_facebooksignup"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/linearlayoutsignup"
+            android:layout_alignTop="@+id/iv_googlesignup"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/facebook" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_googlesignup"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/btn_signup"
+            android:background="@drawable/google" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_signup"
+        android:layout_marginTop="50dp"
+        android:text="Sign Up with"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_progressbarsignup"
+        android:layout_centerInParent="true"/>
+
+
+
+
+</RelativeLayout>
