@@ -38,10 +38,15 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/rv_whatiate"
         android:layout_below="@+id/sv_meal">
 
     </android.support.v7.widget.RecyclerView>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_gotofooddiery"
+        android:layout_below="@+id/rv_whatiate"/>
 
 
 </RelativeLayout>
