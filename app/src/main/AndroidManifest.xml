@@ -15,23 +15,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AllActivities.MainActivity"></activity>
-
-        <activity android:name=".AllActivities.SplashActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-
-
-        </activity>
-
-        <activity android:name=".AllActivities.SignUpActivity">
-
-
-        </activity>
-
-        <activity android:name=".AllActivities.ProfileActivity">
-
-        </activity>
-
+        <activity
+            android:name=".AllActivities.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AllActivities.SignUpActivity" />
+        <activity android:name=".AllActivities.ProfileActivity" />
         <activity
             android:name=".AllActivities.LoginActivity"
             android:label="Login"
@@ -41,44 +29,22 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
         <activity
             android:name=".AllActivities.NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AllActivities.BottomNavigationActivity"
             android:label="@string/title_activity_dash_board"
-            android:theme="@style/AppTheme">
-        </activity>
-
-
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".AllActivities.DashBoardActivity"
-            android:label="DashBoard">
-
-
-        </activity>
-
-        <activity android:name=".AllActivities.FoodDiary">
-
-        </activity>
-
-        <activity android:name=".AllActivities.RecepieActivity">
-
-
-        </activity>
-
-        <activity android:name=".AllActivities.Meal_Activity">
-
-        </activity>
-
-
+            android:label="DashBoard" />
+        <activity android:name=".AllActivities.FoodDiary" />
+        <activity android:name=".AllActivities.RecepieActivity" />
+        <activity android:name=".AllActivities.Meal_Activity" />
+        <activity android:name=".Diet"></activity>
     </application>
-
 
 </manifest>

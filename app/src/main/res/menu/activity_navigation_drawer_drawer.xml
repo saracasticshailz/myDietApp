@@ -20,10 +20,15 @@
             android:id="@+id/nav_guidelines"
             android:icon="@drawable/guidelines"
             android:title="GuideLines" />
+
         <item
             android:id="@+id/nav_bookappoinment"
             android:icon="@drawable/bookapp"
             android:title="Book An Appoinment" />
+        <item
+            android:id="@+id/nav_assessment"
+            android:icon="@drawable/bookapp"
+            android:title="Assessment" />
         <item
             android:id="@+id/nav_setting"
             android:icon="@drawable/settings"
