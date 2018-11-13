@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Diet">
-    <devs.mulham.horizontalcalendar.HorizontalCalendarView
+<!--    <devs.mulham.horizontalcalendar.HorizontalCalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,12 +17,11 @@
         app:textColorSelected="@color/blue"
         app:textSizeDayName="20sp"
         app:textSizeDayNumber="20sp"
-        android:layout_margin="5dp"/>
+        android:layout_margin="5dp"/>-->
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:orientation="horizontal"
-       android:layout_below="@+id/calendarView"
        android:layout_margin="5dp"
        android:layout_marginTop="30dp"
        android:id="@+id/ll">
