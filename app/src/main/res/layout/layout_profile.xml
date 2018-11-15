@@ -12,55 +12,40 @@
        android:id="@+id/ProfileImage"
        android:layout_gravity="center"/>
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:id="@+id/edittext_name"
         android:hint="Full Name"
-        />
-    <EditText
+        android:padding="5dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:id="@+id/edittext_mobileno"
-        android:hint="Mobile No"/>
+        android:hint="Mobile No"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"/>
 
-    <android.support.v7.widget.AppCompatSpinner
-        android:id="@+id/spinner_country"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="20dp">
 
-    </android.support.v7.widget.AppCompatSpinner>
-
-    <EditText
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:id="@+id/edittxt_address"
-        android:hint="Address"/>
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="male"
-            android:id="@+id/rb_male"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Female"
-            android:id="@+id/rv_female"/>
-    </RadioGroup>
+        android:hint="Address"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        />
+
    <TextView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="   DOB"
        android:textSize="20sp"
        android:id="@+id/txtview_dob"
+       android:layout_marginTop="15dp"
        />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,7 +55,16 @@
         android:textColor="#FFF"
         android:textSize="20sp"
         android:background="@drawable/myloginbutton"/>
-    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Edit"
+        android:layout_centerHorizontal="true"
+        android:text="Edit"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:background="@drawable/myloginbutton"/>
+
 
 
 </LinearLayout>
