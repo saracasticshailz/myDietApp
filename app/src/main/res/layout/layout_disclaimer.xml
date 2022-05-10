@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webview_disclaimer">
+
+    </WebView>
+
+   <!--<TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/txtview_disclaimer"
+       android:layout_marginTop="10sp"
+       android:textSize="20sp"
+       android:text="Disclaimer"
+       android:layout_centerHorizontal="true"
+       />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_disclaimer">
+
+    </android.support.v7.widget.RecyclerView>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="desease">
+        <item>Acidity</item>
+        <item>Constipation</item>
+        <item>gastric</item>
+        <item>boating</item>
+        <item>loosemotion</item>
+        <item>IBS</item>
+        <item>Other</item>
+    </string-array>
+</resources>
+

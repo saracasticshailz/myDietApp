@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:id="@+id/ll">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rupee"
+                android:layout_marginTop="15dp"
+                android:layout_toLeftOf="@+id/tv_balance"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:id="@+id/tv_balance"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:text="2000" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="10sp"
+            android:text="WALLET BALANCE" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:padding="5dp"
+        android:id="@+id/btn_transaction"
+        android:layout_below="@+id/ll"
+        android:background="@drawable/myloginbutton"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="transaction"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_transaction"
+        android:id="@+id/rv_wallet">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

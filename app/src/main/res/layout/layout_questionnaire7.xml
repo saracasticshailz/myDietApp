@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_toolbar">
+    </include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cc"
+        android:layout_marginTop="70dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_act"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll3"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="40dp"
+                android:text="Are you doing any activity ?" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll3"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/tv_act"
+                android:layout_toRightOf="@+id/tv_act"
+                android:background="@drawable/star" />
+
+            <RadioGroup
+                android:id="@+id/rg_act_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_act"
+                android:layout_marginLeft="15dp">
+
+                <RadioButton
+                    android:id="@+id/rb_act_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rb_act_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edittext_act_activity"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg_act_activity"
+                android:layout_marginLeft="15dp"
+                android:hint="please mention here" />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edittext_act_activity"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/tv_physicalchall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:text="Do you have any physical challenges to do any acitivity?" />
+
+                <ImageView
+                    android:id="@+id/iv_physicalchall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/star" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_physicalchal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:layout_marginLeft="15dp">
+
+                <RadioButton
+
+                    android:id="@+id/rb_act_phsical_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rb_act_phyasical_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/ed_phy_cha"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg_physicalchal"
+                android:layout_marginLeft="15dp"
+                android:hint="please mention here" />
+
+            <TextView
+                android:id="@+id/tv_docsug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ed_phy_cha"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="Is there any doctor suggestion to do any activity ?" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ed_phy_cha"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/tv_docsug"
+                android:layout_toRightOf="@+id/tv_docsug"
+                android:background="@drawable/star" />
+
+            <RadioGroup
+                android:id="@+id/rg_act_docsug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_docsug"
+                android:layout_marginLeft="15dp">
+
+                <RadioButton
+                    android:id="@+id/rb_docsug_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rb_docsug_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/ed_docsug"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg_act_docsug"
+                android:layout_marginLeft="15dp"
+                android:hint="please mention here" />
+
+            <Button
+                android:id="@+id/btn_act_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ed_docsug"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/myloginbutton"
+                android:text="next"
+                android:textColor="@color/colorPrimary" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</ScrollView>
+</RelativeLayout>

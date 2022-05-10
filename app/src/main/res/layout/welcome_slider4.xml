@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ONLINE PORTAL"
+        android:id="@+id/tt"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="ONLINE PORTAL HELPING HAND"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+       android:layout_centerInParent="true"
+        android:id="@+id/iv_l"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/slide1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To help you stay connected with the program,even with "
+        android:layout_below="@+id/iv_l"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:id="@+id/tt4"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+\
+
+
+    <TextView
+        android:id="@+id/tt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt4"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="your busy schedule,we provide one window"
+        android:textSize="12dp"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="solution to achieve your goals"
+        android:layout_below="@+id/tt5"
+        android:textStyle="italic"
+        android:textSize="12dp"
+        android:id="@+id/tt6"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+</RelativeLayout>

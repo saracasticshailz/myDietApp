@@ -1,27 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hp.diet4happlication">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.d4h.hp.diet4happlication">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="Diet4Health"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".AllActivities.SplashActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AllActivities.ProfileActivity" />
-        <activity
-            android:name=".AllActivities.LoginActivity"
-            android:label="Login"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,20 +41,120 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AllActivities.NavigationDrawerActivity"
-            android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".AllActivities.LoginActivity"
+            android:label="Login"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".AllActivities.BottomNavigationActivity"
             android:label="@string/title_activity_dash_board"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".AllActivities.DashBoardActivity"
-            android:label="DashBoard" />
-        <activity android:name=".AllActivities.FoodDiary" />
-        <activity android:name=".AllActivities.RecepieActivity" />
-        <activity android:name=".AllActivities.Meal_Activity" />
-        <activity android:name=".Diet"></activity>
+            android:name=".AllActivities.FoodDiary"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.ForgotPass"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".AllActivities.NavigationDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AllActivities.TemporaryActivity" />
+        <activity
+            android:name=".AllActivities.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.EscallationAnswerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AllActivities.SlidingImagesActivity" />
+        <activity
+            android:name=".AllActivities.Signup.KnowYourBody"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.Wecome_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.SubcriptionInvoiceActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.Questionnaire.QuestionGeneralInfo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.Questionnaire.QuestionPsychology"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.Questionnaire.QuestionActivityHealth"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.Questionnaire.QuestionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.Questionnaire.QuestionDietory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.Questionnaire.QuestionEatingPattern"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.Questionnaire.QuestionLifeStyle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.ChatActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AllActivities.Questionnaire.QuestionWeightManag"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.AddReview"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.Feedback"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.ChangePasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.DeactiveUserActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.Signup.SignUpResult"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllActivities.Signup.SignupName"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AllActivities.Plan.BridalPlanActivity" />
+        <activity android:name=".AllActivities.Plan.ClinicalPlanActivity" />
+        <activity android:name=".AllActivities.Plan.DetoxPlanActivity" />
+        <activity android:name=".AllActivities.Plan.DiabeticPlanActivity" />
+        <activity android:name=".AllActivities.Plan.KetogenicPlanActivity" />
+        <activity android:name=".AllActivities.Plan.KidsPlanActivity" />
+        <activity android:name=".AllActivities.Plan.PregencyPlanActivity" />
+        <activity android:name=".AllActivities.Plan.WeightGainActivity" />
+        <activity android:name=".AllActivities.Plan.WeightLossActivity" />
+        <activity android:name=".AllActivities.PlanListActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".AllActivities.Plan.SportsPlanActivity" />
+        <activity android:name=".AllActivities.TermsAndConditionActivity" />
+        <activity android:name=".AllActivities.PatientDoc"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AllActivities.SecondScreen"/>
+        <activity
+            android:name=".AllActivities.WorkOutCompletedActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AllActivities.PayMentGateWay" />
+        <activity android:name=".AllActivities.PaymentSuccessActivity" />
+        <activity android:name=".AllActivities.ReferFriendActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".AllActivities.WalletActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_tyNIKaKRo9ky6U" />
+
+
     </application>
 
 </manifest>

@@ -26,4 +26,137 @@
     <string name="title_notifications">Notifications</string>
     <string name="receipe">sghdahdgfsjkhdfjsfkfhsfajsajfnsfbfnmsbfmbsfnbsnmfnmsfdbsmfbmsfmbmfmsbfmnsfbmnsbfmsabfbsf</string>
     <string name="title_activity_add__diet">Add_Diet</string>
+    <string name="address">B2-4/3, Sri Tuja Bhawani Marg, Near Fire</string>
+    <string name="add"> Station, Sector-16, Vashi, Navi Mumbai, Maharashtra 400703</string>
+    <string name="mobile">+91 9702070155</string>
+    <string name="phone">(022)27650455</string>
+    <string name="email">info@diet4health.in</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="valid_login">Enter Valid Email</string>
+
+
+    <string name="dietplan">Customised Diet Chart</string>
+    <string name="health">Health Assessment</string>
+    <string name="dietcoun">Expert Diet Counselling</string>
+    <string name="follow">One Follow Up Call</string>
+    <string name="dash">MobileApp Support</string>
+    <string name="reciepe">Healthy Recipe</string>
+    <string name="chat">Offline Chat Support</string>
+    <string name="dietreview">4 Diet Review</string>
+
+    <string name="first">Customised Diet Chart</string>
+    <string name="second">Weekly Monitoring</string>
+    <string name="third">Monthly FAT Logs</string>
+    <string name="four">Activity Suggestion</string>
+    <string name="five">Healthy Recipe</string>
+    <string name="six">Appointment Flexibility</string>
+    <string name="seven">Chat Support</string>
+    <string name="eight">Eating Out Guideline</string>
+    <string name="nine">Weight Log tracker</string>
+    <string name="ten">BMI Graph</string>
+    <string name="eleven">Real Time Food log</string>
+    <string name="twel">Mobile App Support</string>
+
+    <string name="rs1">\u20B9 3999</string>
+    <string name="rs2">\u20B9 6999</string>
+    <string name="rs3">\u20B9 8999</string>
+    <string name="rs4">\u20B9 16999</string>
+    <string name="rs5">\u20B9 2499</string>
+    <string name="rs6">\u20B9 5000</string>
+    <string name="rs7">\u20B9 1500</string>
+    <string name="rs8">\u20B9 1499</string>
+    <string name="rs9">\u20B9 8499</string>
+
+
+    <!--feedback questions-->
+    <string name="que1">How I will get to know about my updated diet Chart notification?</string>
+    <string name="que2">When I get Appointment notification?</string>
+    <string name="que3">What will be the plan start date?</string>
+    <string name="que4">When I get my plan explanation?</string>
+    <string name="que5">What Happened, if I am not available for Face to Face Appointment on my Consult Day?</string>
+    <string name="que6">What should I do in my weekly review?</string>
+    <string name="que7">Why you need food log every day?</string>
+    <string name="que8">Is weekly update applicable for Consult Week?</string>
+    <string name="que9">When I get my updated Food Contain in my Diet Chart? </string>
+    <string name="que10">How I can ask my Query during the Program?</string>
+    <string name="que11">How I can ask my Query in non-office hours?</string>
+    <string name="que12">Do I have call support?</string>
+    <string name="que13">Will I get call on my online consult?</string>
+    <string name="que14">How much call duration for review and Consult day if choose Online Mode?</string>
+    <string name="que15">What happens if I missed the weekly Review and Consult call?</string>
+    <string name="que16">How to inform, if I am/will go out of station?</string>
+    <string name="que17">What happened about my diet Chart if I travel out from home location?</string>
+    <string name="que18">How I can edit or delete my food dairy?</string>
+    <string name="que19">When my Monthly Body Fat Assessment will be?</string>
+    <string name="que20">During Menses Body Fat Assessment is applicable?</string>
+    <string name="que21">How I can share my Medical report to Diet4Health Nutri Team?</string>
+    <string name="que22">Can I visit Centre without my appointment?</string>
+    <string name="que23">How I Can get expected result from the program?</string>
+    <string name="que24">Is my NutriCoach will be same thought out the program?</string>
+    <string name="que25">How I will get more success in Diet4Health Program?</string>
+    <string name="que26">Can my family follow the same diet?</string>
+    <string name="que27">Can I transfer my program to my family member?</string>
+    <string name="que28">Do I get the printout of Diet Chart?</string>
+    <string name="que29">Can I get plan in different languages?</string>
+    <string name="que30">Can I Change Diet Plan Language in between the programme?</string>
+    <string name="que31">Can I register more than one contact number?</string>
+    <string name="que33">Can I get explanation and counselling more than one family member?</string>
+    <string name="que34">Do you have what’s app and SMS queries option?</string>
+    <string name="que35">Is my medical report compulsory to upload in dashboard?</string>
+    <string name="que36">How do escalate my Nutri support related issues?</string>
+    <string name="que37">How do escalate my App related support and issues?</string>
+    <string name="que38">Is meeting with Dietitian Arti Jain all the appointment?</string>
+    <string name="que39">If my doctor denied to follow the diet?</string>
+    <string name="que40">Can I hold my program in between? </string>
+    <string name="que41">Is there any Refund Policy?</string>
+
+
+    <!--feedback answer-->
+    <string name="anw1">You will get to know through SMS/Email/App Notification</string>
+    <string name="anw2">SMS/ Email/ App Notification for Consultation you will get one working day prior.</string>
+    <string name="anw3">The Diet Programme date starts from the day when we release the First Diet Chart.</string>
+    <string name="anw4">You get your diet plan explanation after the diet plan is released on the portal on the working day as per your given convenient time. So in case, if the patient is not available at that time then it is assumed that the released diet plan suits you and will start following from next day.</string>
+    <string name="anw5">You don’t need to worry, in that case you will have to submit weekly review form from App or Web, Our Team will release the Updated Diet Chart based on the strategy we discussed on the appointment day only. However, if you want to discuss, you may discuss with your NutriCoach for the same.</string>
+    <string name="anw6">You need to submit Weekly review in every 7 days, also Food dairy and Weight Log need to be updated on daily basis, because both inputs play major role to monitor your Program Progress.Our Nutri Team update you the progress.</string>
+    <string name="anw7">Because it plays major role to Identify the progress and Body Response of Individual.</string>
+    <string name="anw8">Yes, Weekly Review is mandate for consult and review day both, as well as you need to update us food dairy, Daily weight log for progress monitoring purpose and to understand body response.</string>
+    <string name="anw9">We update food cantain in Diet chart every  alternate week as per start day of the Program.</string>
+    <string name="anw10">Diet4Health provides you NutriChat Option where you can drop your Nutri related query, Our Team will respond you in working hour only. (TAT for response is 2 Hours)</string>
+    <string name="anw11">You may use Offline Nutrichat option for the same, Our Nutri Team will resolve your query in working time. </string>
+    <string name="anw12">No, Diet4health does not include call support in the programme, however we have provision 10 Mins Call duration in Weekly Review for better coordination.
+‘NutriCoach make call only once to avoid disturbance in your schedule and in case of no response from your side, we put reminder over the chat, so that whenever You will free you may approach us(in working hour)
+    </string>
+    <string name="anw13">Yes, online consult day we will make a call as per mentioned time in weekly review submitted by you.</string>
+    <string name="anw14">Your call duration for Review is 10 mins and for Consult is 15 mins.</string>
+    <string name="anw15">Then no need to worry,In that case you may call back us in working hour we are ready to support, since we already called you and did not receive any response from you side we will assume that you must be busy in some other work and we will wait for your call back.  </string>
+    <string name="anw16">For any travelling plan you may inform us through Nutrichat option or if review or consult day, you may mention in review form too.</string>
+    <string name="anw17">No need to worry, we change the Diet Chart as per your travel plan.</string>
+    <string name="anw18">Edit and Delete option in food dairy are available in Web Dashboard However in Mobile App will be on roadmap.</string>
+    <string name="anw19">We have scheduled Body Fat assessment 5th, 9th, 13th and 17th weeks only. Example If your Diet plan start date 01-Jan-19 than Body Fat assessment date will be 29-Jan-19 on same day. For female in case of menses it may differ because we avoid during menses day.</string>
+    <string name="anw20">During menses cycle we avoid Body assessment. In that case member can postpone the body Fat Assessment day to next working day</string>
+
+    <string name="anw21">You may upload the Reports in web Dashboard -> Patient Document ->view All-> Add</string>
+    <string name="anw22">We request you to Use Appointment Request option in Web / App  for rescheduling Appointment, We will try to adjust if Possible and confirm you the same or else in case of all slots busy we will mutually discuss and schedule your appointment for some other day.</string>
+    <string name="anw23">Its very Simple you need to keep follow the Diet and Instruction which we suggested or you, you will have to keep connected to us through App/Web by updating all programme flow like weight log, Weekly Review and Health Update.
+*Disclaimer: Result may vary person to person*
+</string>
+    <string name="anw24">Your case is handled under the supervision of Chief Dietitian and whole team of Diet4health (Nutri team). No need to worry for that.</string>
+    <string name="anw25">You must be committed for your Health and keep updating us timely with your food Dairy, Weekly Review, Health as per the Program flow.</string>
+    <string name="anw26">NO, because we provide customised Diet plan strategy only for you as every individual is different therefore need of food intake is also different.</string>
+    <string name="anw27">No, Our Diet Programme only start once we do deep analysis of patient’s body parameters, and create customised strategy for him/her. Therefore transfer cannot possible.</string>
+    <string name="anw28">No, because we believe in complete programme which is available on the dashboard/ Mobile App as time to time change in diet intake will also matter, however print media cannot give live update as per your requirement.</string>
+    <string name="anw29">We provide Diet Chart in English and Hindi language as per your convenience but the language selection must be at the time of enrolment, but kindly note that if you select “Hindi” Language Mobile App will not support for the same, that will be available on Web Dashboard only.</string>
+    <string name="anw30">No, you cannot change Diet Chart Language in between the programme.</string>
+    <string name="anw31">No, we only communicate on registered number to avoid communication gap.</string>
+    <string name="anw33">No, because your diet plan explanation and counselling remains confidential so the patient and his/her spouse/parents are allowed at a time.</string>
+    <string name="anw34">No, all your queries are resolved through the Nutri chat option (Monday to Saturday- 10 am to 7 pm) which is there on the dashboard and in the app. Also, in the review week and consult week, all your queries are resolved through the call and chat option.</string>
+    <string name="anw35">Yes, you may upload the Reports in web Dashboard -> Patient Document ->view All-> Add.</string>
+    <string name="anw36">You may escalate Nutri support related issues through the Nutri chat option which is there on the dashboard and in the Mobile App.</string>
+    <string name="anw37">You may put your concern in “Escalation tab” which is there on the dashboard and in the Mobile App.</string>
+    <string name="anw38">As All the Diet4Health programme is under supervision of Dietitian Arti Jain and she only makes strategy for you,  she monitor your health with help of Diet4Health Tools and programme flow, whenever need of change in strategy in the programme we will schedule your appointment with her.</string>
+    <string name="anw39">Your diet plan strategy is made as per your health and body parameter requirements, so after studying the whole case the diet plan is made accordingly.  And if in case there are other medical issues, diet plan is modified accordingly.</string>
+    <string name="anw40">No, we do not have such kind of policy.</string>
+    <string name="anw41">We do not have any refund policy.</string>
+
+
 </resources>

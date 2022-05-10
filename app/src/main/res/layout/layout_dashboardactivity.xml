@@ -7,113 +7,393 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:scrollbars="none">
+    android:scrollbars="none"
+    android:layout_marginBottom="60dp">
 
 
     <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl">
 
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150sp"
+        <android.support.v4.view.ViewPager
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
             android:layout_marginTop="10sp"
-            android:background="@drawable/banner"
             android:contentDescription=""
+            android:background="@drawable/b1"
             android:layout_margin="10dp"
-            android:id="@+id/iv_dashboard"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="welcome"
-            android:layout_below="@+id/iv_dashboard"
-            android:id="@+id/btn_slide"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/id_linearlayoutdash_txtview"
-            android:layout_below="@+id/btn_slide">
+            android:id="@+id/iv_dashboard" />
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_dashboard"
+            android:layout_margin="10dp"
+            android:id="@+id/cc">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:padding="5dp"
+                    android:text=""
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btn_slide"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/id_linearlayoutdash_txtview"
+            android:layout_below="@+id/cc">
+            <ImageView
+                android:id="@+id/iv_dietplan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/work"/>
+
+            <!-- <View
+                 android:id="@+id/overlay_image"
+                 android:layout_width="150dp"
+                 android:layout_height="match_parent"
+                 android:layout_alignParentTop="true"
+                 android:background="@drawable/img_fore" />-->
             <TextView
                 android:id="@+id/id_txtviewdietplan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/id_linearlayoutdash_txtview"
-                android:layout_margin="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_weight="0.1"
-                android:text="          My Diet Plan"
+                android:textColor="@color/colorGray"
+                android:layout_centerHorizontal="true"
+                android:text="My Diet Plan"
                 android:textSize="15dp"
                 android:textStyle="bold" />
+        </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/cc"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/id_linearlayoutdashboard_iv">
+            <ImageView
+                android:id="@+id/iv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plan"
+                />
+            <!--<View
+                android:id="@+id/overlay_images"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_fore"/>-->
             <TextView
                 android:id="@+id/id_myworkout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/btn_slide"
-                android:layout_weight="0.1"
-                android:textStyle="bold"
-                android:layout_margin="10dp"
-                android:text="          My Work Out" />
+                android:textColor="@color/colorGray"
+                android:layout_centerHorizontal="true"
+                android:text="My Work Out"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_linearlayoutdashboard_iv"
+            android:layout_margin="10dp"
+            android:id="@+id/cc1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:padding="5dp"
+                    android:text="Enter Today Weight"
+                    android:id="@+id/txtview_status"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll"
+            android:layout_below="@+id/cc1">
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WEIGHT"
+                        android:textSize="18dp"
+                        android:id="@+id/ww"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ww"
+                        android:layout_centerInParent="true"
+                        android:textSize="40dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/txtview_dash_weight"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ww"
+                        android:layout_centerInParent="true"
+                        android:textSize="40dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/sadface"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/iv_dash_weight"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview_dash_weight"
+                        android:layout_alignParentRight="true"
+                        android:text="kg"
+                        android:visibility="gone"
+                        android:id="@+id/txtview_kg"
+                        android:layout_marginRight="10dp"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/bb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="BMI"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/txtview_dash_bmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bb"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="40dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_bmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bb"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/sadface"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="40dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtview_kgm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview_dash_bmi"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="kg/m2"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
         </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/id_linearlayoutdash_txtview"
-        android:id="@+id/id_linearlayoutdashboard_iv">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GET YOUR HEALTH UPDATES HERE!"
+            android:layout_below="@+id/ll"
+            android:id="@+id/cr"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll1"
+            android:layout_below="@+id/ll"
+            android:layout_marginTop="20dp">
 
-        <ImageButton
-            android:id="@+id/iv_dietplan"
-            android:layout_width="100dp"
-            android:layout_height="150dp"
-            android:layout_margin="10dp"
-            android:layout_weight="0.5"
-            android:background="@drawable/dietplan" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/iv_assesment"
+                    android:background="@drawable/roundassessment"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Assesment"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/iv_appoinment"
+                    android:background="@drawable/roundappoin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Appoinment"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Request"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_document"
+                    android:background="@drawable/roundpatientdocu"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Patient"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Documents"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_below="@+id/ll1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/iv_refer"
+                    android:background="@drawable/roundrefer"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Refer Your Friend"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/iv_wallet"
+                    android:background="@drawable/roundwallet"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Your Wallet"/>
 
-        <ImageButton
-            android:id="@+id/iv_weight"
-            android:layout_width="100dp"
-            android:layout_height="150dp"
-            android:layout_margin="10dp"
-            android:layout_weight="0.5"
-            android:background="@drawable/workout" />
-    </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:id="@+id/id_linearlayoutdashboardb_btn"
-       android:layout_below="@+id/id_linearlayoutdashboard_iv">
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/id_linearlayoutdashboardb_btn"
+             android:layout_below="@+id/id_linearlayoutdash_txtview">
 
-       <Button
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:id="@+id/btn_weight"
-           android:layout_weight="0.5"
-           android:text="Weight"
-           />
-       <Button
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:id="@+id/btn_bmi"
-           android:text="Bmi"
-           android:layout_weight="0.5"/>
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/btn_weight"
+                 android:layout_weight="0.5"
+                 android:text="Weight"
+                 />
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/btn_bmi"
+                 android:text="Bmi"
+                 android:layout_weight="0.5"/>
 
-   </LinearLayout>
+         </LinearLayout>-->
 
-    <com.jjoe64.graphview.GraphView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:id="@+id/id_graphview"
+        <!-- <com.jjoe64.graphview.GraphView
+             android:layout_width="match_parent"
+             android:layout_height="150dp"
+             android:id="@+id/graph"
 
-        android:layout_below="@id/id_linearlayoutdashboardb_btn"
-        />
-
-        <Button
+             android:layout_below="@id/id_linearlayoutdashboardb_btn"
+             />
+     -->
+        <!--<Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn_viewall"
@@ -124,12 +404,43 @@
             />
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:id="@+id/rv_imgreciepie"
            android:layout_alignParentBottom="true"
+            android:layout_below="@id/btn_viewall"
             >
 
         </android.support.v7.widget.RecyclerView>
+-->
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_linearlayoutdashboardb_btn">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50dp"/>
 
-</RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="150dp"/>
+
+
+        </LinearLayout>-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="all health plans"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/getplan"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/ll1"
+            android:layout_marginTop="20dp"
+            />
+    </RelativeLayout>
 </ScrollView>

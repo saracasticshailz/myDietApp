@@ -1,9 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#101B29</color>
-    <color name="colorPrimaryDark">#101B29</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#fb7603</color>
     <color name="colorAccent">#726D6D</color>
     <color name="colorOrange">#F68633</color>
+    <color name="colorGray">#808080</color>
     <color name="blue">#0000FF</color>
+    <color name="colorBlack">#000</color>
+    <color name="lightGray">#d3d3d3</color>
+    <color name="colorOffwhite">#F5F5F5</color>
+    <color name="colorWhite">#040866</color>
+    <color name="colorRed">#F90303</color>
+    <color name="colorGreen">#129612</color>
+
+
+    <color name="dot_light_screen1">#000</color>
+    <color name="dot_light_screen2">#000</color>
+    <color name="dot_light_screen3">#000</color>
+    <color name="dot_light_screen4">#000</color>
+
+    <color name="dot_dark_screen1">#9E9E9E</color>
+    <color name="dot_dark_screen2">#9E9E9E</color>
+    <color name="dot_dark_screen3">#9E9E9E</color>
+    <color name="dot_dark_screen4">#9E9E9E</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
 </resources>
     <!--#B12-->
+    <!--
+    <color name="colorPrimaryDark">#101B29</>color
+    <color name="colorPrimary">#101B29</color>
+    <color name="colorPrimaryDark">#F68633</color>
+    <color name="colorAccent">#726D6D</color>
+        <
+    -->
+    <!--#B12-->
+<!--
+<color name="colorPrimaryDark">#101B29</>color
+<color name="colorPrimary">#101B29</color>
+<color name="colorPrimaryDark">#F68633</color>
+<color name="colorAccent">#726D6D</color>
+    <
+-->

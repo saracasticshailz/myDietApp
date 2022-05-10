@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mealtype">
+        <item>Other</item>
+        <item>Onrising</item>
+        <item>BreakFast</item>
+        <item>Mid Morning</item>
+        <item>Lunch</item>
+        <item>Evening Snacks</item>
+        <item>Dinner</item>
+        <item>Bedtime</item>
+        <item>Eating Out</item>
+        <item>Pre Workout</item>
+        <item>Late Evening</item>
+
+    </string-array>
+</resources>

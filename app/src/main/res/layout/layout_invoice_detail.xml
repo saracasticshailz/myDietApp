@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_toolbar"></include>
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invoice"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/colorGray"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtview_i"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:textSize="20sp"/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plan Detail"
+        android:layout_marginRight="5dp"
+        android:padding="3dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/txtview_i2"
+        android:textStyle="bold"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_i"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_below="@+id/txtview_i2">
+
+        <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtview_inv_name"
+                android:text="Name"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan Name:"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtview_inv_palnname"
+                android:text="Plan Name"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration:"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtview_inv_duration"
+                android:text="Duration"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Date:"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtview_inv_paymnentdate"
+                android:text="Payment Date"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Program Start Date:"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtview_inv_progstartdate"
+                android:text="Program Start Date"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subcription Over:"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtview_inv_subcrover"
+                android:text="Subcription Over"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"/>
+        </TableRow>
+        </TableLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost Detail"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
+        android:padding="3dp"
+        android:layout_below="@+id/ll_i"
+        android:id="@+id/txtview_i3"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:textSize="18sp"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cc2"
+        android:layout_below="@+id/txtview_i3"
+        android:layout_margin="5dp">
+
+
+    <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan Cost:"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtview_inv_plancost"
+                    android:text="Plan Cost"
+                    android:textColor="@color/colorGray"
+                    android:layout_margin="5dp"/>
+
+            </TableRow>
+            <TableRow>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offer Cost:"
+                android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtview_inv_offercost"
+                    android:text="Offer Cost"
+                    android:textColor="@color/colorGray"
+                    android:layout_margin="5dp"/>
+            </TableRow>
+            <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Addtional Discount:"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtview_inv_additionaldis"
+                    android:text="Addtional Discount"
+                    android:textColor="@color/colorGray"
+                    android:layout_margin="5dp"/>
+        </TableRow>
+            <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Net Amount:"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtview_inv_netpayment"
+                    android:text="Net Amount"
+                    android:textColor="@color/colorGray"
+                    android:layout_margin="5dp"/>
+         </TableRow>
+            <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount Paid:"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtview_inv_amountpaid"
+                    android:text="Amount Paid"
+                    android:textColor="@color/colorGray"
+                    android:layout_margin="5dp"/>
+            </TableRow>
+            <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance:"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtview_inv_balance"
+                    android:text="Balance"
+                    android:textColor="@color/colorGray"
+                    android:layout_margin="5dp"/>
+    </TableRow>
+    </TableLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cc2"
+        android:layout_centerInParent="true"
+        android:background="@drawable/myloginbutton"
+        android:textColor="@color/colorPrimary"
+        android:text="Cancel"
+        android:id="@+id/btn_invoice_cancel"/>-->
+</RelativeLayout>
+</ScrollView>

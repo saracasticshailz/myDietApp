@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView02"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_applogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/d4hlogo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Appoinment"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+       android:layout_marginTop="20dp"
+        android:id="@+id/txtview_appoinment"
+        android:layout_below="@+id/iv_applogo"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorGray"
+        android:textSize="18sp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cvapp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/txtview_appoinment"
+
+        >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_appoinment"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtview_apptype"
+            android:text="Appoinment Type"
+            android:padding="5dp"
+            android:textColor="@color/colorGray"
+            android:textSize="15sp" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_apptype">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGray"
+                android:text="Online"
+                android:id="@+id/rb_online"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGray"
+                android:text="Offline"
+                android:id="@+id/rb_offline"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtview_olType"
+            android:visibility="gone"
+            android:text="Online Type"
+            android:textColor="@color/colorGray"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"/>
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:visibility="gone"
+           android:id="@+id/rg_oltype">
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorGray"
+               android:text="Audio Call"
+               android:id="@+id/rb_audio"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorGray"
+               android:text="Video Call"
+               android:id="@+id/rb_video"/>
+       </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appoinment Date"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorGray"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="dd-mm-yy"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/edittext_appo_date"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timing"
+            android:textColor="@color/colorGray"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_appo_time"
+            android:entries="@array/apptime">
+
+        </Spinner>
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment:"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorGray"
+            android:padding="5dp"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_appocomment"
+            android:hint="Comment If Any"/>-->
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvapp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:weightSum="1">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_appsubmit"
+        android:text="Submit"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/myloginbutton"
+       android:layout_weight="0.5"
+        />
+
+    <Button
+        android:id="@+id/btn_app_cancle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/cvapp"
+        android:layout_weight="0.5"
+        android:background="@drawable/myloginbutton"
+        android:text="Cancel"
+        android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+   <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_appsubmit">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"/>
+
+    </LinearLayout>-->
+</RelativeLayout>
+</ScrollView>

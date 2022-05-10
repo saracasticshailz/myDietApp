@@ -1,70 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_margin="15dp">
+    android:layout_height="match_parent"
+    android:id="@+id/relativelayout_profile"
+    android:layout_margin="15dp"
+    android:layout_marginBottom="40dp">
 
-   <ImageView
-       android:layout_width="100dp"
-       android:layout_height="100dp"
-       android:id="@+id/ProfileImage"
-       android:layout_gravity="center"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:id="@+id/edittext_name"
-        android:hint="Full Name"
-        android:padding="5dp"
-        android:layout_marginTop="20dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:id="@+id/edittext_mobileno"
-        android:hint="Mobile No"
-        android:padding="5dp"
-        android:layout_marginTop="20dp"/>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:id="@+id/edittxt_address"
-        android:hint="Address"
-        android:padding="5dp"
-        android:layout_marginTop="20dp"
-        />
-
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="   DOB"
-       android:textSize="20sp"
-       android:id="@+id/txtview_dob"
-       android:layout_marginTop="15dp"
-       />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_submit"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ProfileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_centerHorizontal="true"
-        android:text="Submit"
-        android:textColor="#FFF"
-        android:textSize="20sp"
-        android:background="@drawable/myloginbutton"/>
-    <Button
-        android:layout_width="wrap_content"
+        android:background="@drawable/boss"
+        android:layout_gravity="center" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_Edit"
-        android:layout_centerHorizontal="true"
-        android:text="Edit"
-        android:textColor="#FFF"
-        android:textSize="20sp"
-        android:background="@drawable/myloginbutton"/>
+        android:layout_below="@+id/ProfileImage"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/ccp">
 
 
+    <TableLayout
+        android:id="@+id/linearlayout_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
 
-</LinearLayout>
+        <TableRow
+            android:padding="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_pname"
+                />
+        <TextView
+            android:id="@+id/edittext_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Full Name"
+            android:padding="5dp"
+            android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_pmobile"
+               />
+        <TextView
+            android:id="@+id/edittext_mobileno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No"
+            android:padding="5dp"
+            android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_pemail"
+                />
+        <TextView
+            android:id="@+id/edittxt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="5dp"
+            android:textSize="15sp" />
+        </TableRow>
+
+       <!-- <TextView
+            android:id="@+id/txtview_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text=" DOB"
+            android:textSize="20sp" />-->
+    </TableLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ccp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="63dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.5"
+            android:background="@drawable/myloginbutton"
+            android:text="Back"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_changepassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/myloginbutton"
+            android:text="change password"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

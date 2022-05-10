@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cookingprefer">
+        <item>No cooking possible at home </item>
+        <item>simple cooking possible at home</item>
+        <item>all kind of cooking posible at home</item>
+        <item>anything is ok</item>
+
+    </string-array>
+</resources>

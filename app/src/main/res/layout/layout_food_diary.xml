@@ -1,110 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <include layout="@layout/layout_toolbar">
+    </include>
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/id_rv_fooddiary">
-
-    </android.support.v7.widget.RecyclerView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/id_linearlayout_fooddiary"
-        android:layout_below="@+id/id_rv_fooddiary">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/id_btn_meal"
-            android:textColor="#FFF"
-            android:layout_weight="0.2"
-            android:layout_margin="5dp"
-            android:background="@drawable/myloginbutton"
-            android:text="meal"
-            />
-
-        <Button
-            android:id="@+id/id_btn_workout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:layout_margin="5dp"
-            android:background="@drawable/myloginbutton"
-            android:textColor="#FFF"
-            android:layout_alignParentTop="true"
-            android:text="work out" />
-
-    </LinearLayout>
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_below="@id/id_linearlayout_fooddiary"
-        android:id="@+id/rv_fooddiary2">
-
-    </android.support.v7.widget.RecyclerView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/id_linearlayout_fooddiary2"
-        android:layout_below="@+id/rv_fooddiary2">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/id_btn_gaincal"
-            android:textColor="#FFF"
-            android:layout_weight="0.2"
-            android:layout_margin="5dp"
-            android:background="@drawable/myloginbutton"
-            android:text="27"
-            />
-
-        <Button
-            android:id="@+id/id_btn_burncal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:layout_margin="5dp"
-            android:background="@drawable/myloginbutton"
-            android:textColor="#FFF"
-            android:text="29" />
-
-    </LinearLayout>
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
     <TextView
-        android:id="@+id/id_txtview_burn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/id_linearlayout_fooddiary2"
-        android:layout_alignRight="@+id/id_linearlayout_fooddiary2"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/colorOrange"
-        android:textStyle="bold"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="10dp"
-        android:text="Burn Calaries"
-        android:textSize="18sp" />
+        android:id="@+id/txtview_date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/id_txtview_gain"
+
+    <ImageView
+        android:id="@+id/iv_calender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/id_linearlayout_fooddiary2"
-        android:text="Gained Calaries"
-        android:textColor="@color/colorOrange"
-        android:textStyle="bold"
+        android:layout_alignBottom="@+id/txtview_date"
         android:layout_marginRight="10dp"
-        android:layout_margin="10dp"
-        android:textSize="18sp" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/calendar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtview_date"
+        android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_fooddiery"
+                android:background="#d3d3d3"
+                android:layout_margin="5dp">
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtview_empty"
+            android:layout_marginLeft="100dp"
+            android:text="Your Food Diery is Empty"/>
+    </LinearLayout>
 
 
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/fab_fooddiery"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/plusf"
+        app:backgroundTint="@color/colorOrange"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="36dp"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/id_progressbarFood"/>
 </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

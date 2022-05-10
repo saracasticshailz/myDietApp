@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stress">
+        <item>NO</item>
+        <item>Low</item>
+        <item>High</item>
+        <item>Very High</item>
+        <item>Medium</item>
+    </string-array>
+</resources>

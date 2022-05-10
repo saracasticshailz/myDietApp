@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sc">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:id="@+id/txtview_bmi_hi"
+                android:layout_margin="10dp"
+                android:text="hiii shailesh,you look"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_below="@+id/txtview_bmi_hi"
+                android:id="@+id/txtview_bmi_underweight"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Under Weight"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_below="@+id/txtview_bmi_underweight"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll"
+                android:layout_below="@+id/txtview_bmi_underweight">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your BMI"
+                        android:textSize="20sp"
+                        android:id="@+id/txtview_tt"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        />
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview_tt"
+                        style="@style/CardViewStyle"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/cc">
+
+                        <TextView
+                            android:layout_margin="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="BMI"
+                            android:textAlignment="center"
+                            android:id="@+id/bmi"/>
+                    </android.support.v7.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:text="Ideal Weight"/>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview_tt"
+                        style="@style/CardViewStyle"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/cc1">
+
+                        <TextView
+                            android:layout_margin="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            android:text="Weight"
+                            android:textAlignment="center"
+                            android:id="@+id/IdealWt"/>
+                    </android.support.v7.widget.CardView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textSize="15sp"
+                        android:id="@+id/Tv_havto"
+                        android:textStyle="bold"
+                        android:text="You have to loose"/>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/CardViewStyle"
+                        android:layout_below="@+id/txtview_tt"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/cc2">
+
+                        <TextView
+                            android:layout_margin="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="weight"
+                            android:textAlignment="center"
+                            android:id="@+id/extraWt"/>
+                    </android.support.v7.widget.CardView>
+
+
+                    <!-- <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Get Plan Here"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@drawable/myloginbutton"/>-->
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/txtview_bmi_underweight"
+                    android:layout_toRightOf="@+id/ll"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/signupresultimg" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:paddingBottom="20dp"
+                android:id="@+id/vp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Related Plans!"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/Iv_Result"
+                    >
+                </ImageView>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Get Yourself Healthy here!"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/getplan"
+                android:layout_marginBottom="20dp"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

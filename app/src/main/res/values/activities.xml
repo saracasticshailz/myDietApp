@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="activity">
+        <item>Select Activity type</item>
+        <item>Running</item>
+        <item>Walking</item>
+        <item>Jogging</item>
+        <item>Yoga</item>
+        <item>Swimming</item>
+        <item>Cycling</item>
+        <item>Tracking</item>
+        <item>Squat</item>
+        <item>Jump Rope</item>
+        <item>Leg press</item>
+        <item>Wall sit</item>
+        <item>Leg curl</item>
+        <item>Snatch</item>
+        <item>Standing calf raise</item>
+        <item>Burpees</item>
+        <item>Explosive Lunges</item>
+        <item>Double Jump</item>
+        <item>Mountain Climbers</item>
+        <item>Others</item>
+    </string-array>
+</resources>

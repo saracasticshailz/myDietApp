@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cousinepref">
+        <item>None</item>
+        <item>Telegu</item>
+        <item>kannada</item>
+        <item>marathi</item>
+        <item>gujrati</item>
+        <item>punjabi</item>
+        <item>tamil</item>
+        <item>kerala</item>
+        <item>marwari</item>
+        <item>bengali</item>
+        <item>western</item>
+        <item>continental</item>
+        <item>bihar</item>
+        <item>Udiya</item>
+        <item>Assamese</item>
+        <item>nagaland</item>
+        <item>kashmiri</item>
+        <item>manipuri</item>
+        <item>Continental</item>
+        <item>Chainees</item>
+        <item>Italian</item>
+        <item>Maxicun</item>
+        <item>other</item>
+
+
+    </string-array>
+</resources>

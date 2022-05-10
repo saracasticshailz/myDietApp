@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STAY MOTIVATED"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tt"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorGray"
+        android:layout_centerHorizontal="true"
+        android:text="CLOSE MONITORING AND EFFECTIVE COUNSELLING"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  TO STAY MOTIVATED"
+        android:layout_below="@+id/tt2"
+        android:textColor="@color/colorGray"
+        android:textSize="12dp"
+        android:id="@+id/tt3"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+       android:layout_centerInParent="true"
+        android:id="@+id/iv_l"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/slide2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Working towards a healthy lifestyle is a difficult.Journey"
+        android:layout_below="@+id/iv_l"
+        android:textStyle="italic"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tt4"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt4"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:layout_marginTop="1dp"
+        android:text="and full of barriers Just when you feel disheartened"
+        android:textSize="12dp"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="and are a step away from giving up "
+        android:layout_below="@+id/tt5"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:id="@+id/tt6"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+</RelativeLayout>

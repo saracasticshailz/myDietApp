@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="motivation">
+        <item>Self</item>
+        <item>family</item>
+        <item>friends</item>
+        <item>health</item>
+        <item>fitness</item>
+        <item>Other</item>
+    </string-array>
+</resources>

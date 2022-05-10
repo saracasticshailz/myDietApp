@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alchohol">
+        <item>for changes</item>
+        <item>Work</item>
+        <item>Cannot control</item>
+        <item>social gattering</item>
+        <item>Home culture</item>
+        <item>Other</item>
+
+    </string-array>
+</resources>
+

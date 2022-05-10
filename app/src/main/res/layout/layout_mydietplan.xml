@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_workout"
+        android:weightSum="7"
+        android:layout_margin="5dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="sun"
+            android:id="@+id/sun"
+            android:layout_margin="2dp"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="mon"
+            android:id="@+id/mon"
+            android:layout_margin="2dp"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="tue"
+            android:id="@+id/tue"
+            android:layout_margin="2dp"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="wed"
+            android:id="@+id/wed"
+            android:layout_margin="2dp"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="thu"
+            android:id="@+id/thu"
+            android:layout_margin="2dp"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_weight="0.9"
+            android:text="fri"
+            android:id="@+id/fri"
+            android:layout_margin="2dp"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="sat"
+            android:id="@+id/sat"
+            android:layout_margin="2dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll_workout"
+        android:layout_margin="5dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/ll">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_dietchart"
+            android:textColor="@color/colorPrimary"
+            android:text="diet chart"
+            android:background="@drawable/defaultbtn"
+            android:layout_weight="1"
+            android:layout_margin="5dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_fooddiery"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/defaultbtn"
+            android:text="food diary"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_margin="12dp"
+        android:orientation="vertical"
+        android:background="#d3d3d3">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rc_mydiet">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

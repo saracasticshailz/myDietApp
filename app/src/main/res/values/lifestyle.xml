@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lifeStyle">
+        <item>No Exercise</item>
+        <item>Light exercise</item>
+        <item>Moderate exercise (3-5 days/wk)</item>
+        <item>Very active( heavy  Exercise ) (6-7 days/wk)</item>
+        <item>Extra active (very active and physical job)Twice per day</item>
+    </string-array>
+</resources>
+

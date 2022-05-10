@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diet Plan"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tt"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:text="CUSTOMISE DIET PLAN IS NATURAL "
+        android:textSize="12dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" AND PURELY KICHEN BASED"
+        android:layout_below="@+id/tt2"
+        android:textSize="12dp"
+        android:id="@+id/tt3"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/iv_l"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/slide3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Each Person Has Unique Tollerance And Different Response"
+        android:layout_below="@+id/iv_l"
+        android:textStyle="italic"
+        android:textSize="12dp"
+        android:id="@+id/tt4"
+        android:layout_centerHorizontal="true"
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt4"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:layout_marginTop="1dp"
+        android:text="To Dietary Changes.Therefore Diet4health"
+        android:textSize="12dp"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expert Make Sure That The Diet Paln "
+        android:layout_below="@+id/tt5"
+        android:textStyle="italic"
+        android:textSize="12dp"
+        android:id="@+id/tt6"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="5dp"
+    >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtview_mealtype"
+        android:text="type"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txtview_mealtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorGray"
+       android:layout_marginTop="10dp"
+        android:text="time"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtview_mealname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGray"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txtview_mealtime"
+        android:text="name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtview_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGray"
+        android:layout_below="@+id/txtview_mealtime"
+        android:layout_alignParentRight="true"
+        android:text="Quantity"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>

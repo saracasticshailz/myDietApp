@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/d4hlogo"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBSCRIPTION OVER"
+        android:textStyle="bold"
+        android:id="@+id/txtview_notactive"
+        android:textSize="30dp"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey!! Its time to Renew your Nutrition"
+        android:id="@+id/txtview_notactive2"
+        android:padding="5dp"
+        android:layout_below="@+id/txtview_notactive"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program"
+        android:id="@+id/txtview_notactive3"
+        android:layout_below="@+id/txtview_notactive2"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_deactive"
+        android:layout_below="@+id/txtview_notactive3"
+        android:layout_centerHorizontal="true"
+        android:text="ok"
+        android:layout_margin="10dp"
+        android:background="@drawable/myloginbutton"
+        android:textColor="@color/colorPrimary"/>
+
+
+
+</RelativeLayout>

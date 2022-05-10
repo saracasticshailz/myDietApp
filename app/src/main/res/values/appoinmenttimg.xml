@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="apptime">
+        <item>10AM-11AM</item>
+        <item>11AM-12AM</item>
+        <item>12PM-1PM</item>
+        <item>3PM-4PM</item>
+        <item>4PM-5PM</item>
+        <item>5PM-6PM</item>
+    </string-array>
+</resources>

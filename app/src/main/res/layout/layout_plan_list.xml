@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/layout_toolbar"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorOffwhite"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/CardViewStyle">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WEIGHT LOSS"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/fallingskyobl"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/photoweight"
+                        style="@style/CardViewStyle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Achieve your ideal weight as per your body’s requirement with the help of our effective weight loss plan."/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/wtloss"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/colorPrimary"
+                        android:text="View More"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/CardViewStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WEIGHT GAIN"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/fallingskyobl"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/photowightgain"
+                        style="@style/CardViewStyle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Weight gain needs fat shedding with muscle gain."/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/wtgain"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/colorPrimary"
+                        android:text="View More"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/CardViewStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DIABETIC DIET PRO"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/fallingskyobl"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/photodiabetic"
+                        style="@style/CardViewStyle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Diet4Health Diabetes Programme aim to provide customize diet as per your clinical parameter and life style require changes with proper monitoring will help you to manage your diabetes and sometimes help you to reduce your medicine too."/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/wtdiabeticpro"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/colorPrimary"
+                        android:text="View More"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/CardViewStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BRIDAL DIET PROGRAM"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/fallingskyobl"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/photobridal"
+                        style="@style/CardViewStyle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="This Bridal diet plan is dedicated to all girls who are going to become a princess for her price."/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/wtbridal"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/colorPrimary"
+                        android:text="View More"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/CardViewStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PREGNANCY DIET"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/fallingskyobl"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/photopregency"
+                        style="@style/CardViewStyle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Diet 4health Pregnancy plan helps pregnant women to improve their nutrition for proper growth and development."/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/wtPregDiet"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/colorPrimary"
+                        android:text="View More"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/CardViewStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KIDS DIET"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/fallingskyobl"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/photokidsplan"
+                        style="@style/CardViewStyle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Give your kid a gift of healthy life."/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/wtkidDiet"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/colorPrimary"
+                        android:text="View More"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/CardViewStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CLINICAL NUTRITION"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/fallingskyobl"
+                        android:textSize="20sp"/>
+
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/photoclinical"
+                        style="@style/CardViewStyle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Nutritional care is essential for all critical conditions. You can take our expert advice."/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/wtclinicalnutri"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/colorPrimary"
+                        android:text="View More"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/CardViewStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DETOX DIET"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/fallingskyobl"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/photodetox"
+                        style="@style/CardViewStyle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Detox nutrition helps not only to keep body organs clean and toxic free but also to improve skin, energy and immunity."/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/wtDetoxdiet"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/colorPrimary"
+                        android:text="View More"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/CardViewStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KETOGENIC DIET"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/fallingskyobl"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/photoketogenic"
+                        style="@style/CardViewStyle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Ketogenic diet getting fame due to its fastest weight loss strategy with delicious fatty Dishes."/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/wtketo"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/colorPrimary"
+                        android:text="View More"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/CardViewStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SPORTS NUTRITION"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/fallingskyobl"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/photosports"
+                        style="@style/CardViewStyle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="This plan help to improve the health while sports performance in long distance running (Marathon), cyclotron , swimming, shockers, tennis etc."/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/sportDiet"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/colorPrimary"
+                        android:text="View More"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

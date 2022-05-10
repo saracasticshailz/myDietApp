@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="habit">
+        <item>Mid Night Meal Intake</item>
+        <item>Cant Avoid Junk Food</item>
+        <item>Live for Food Only</item>
+        <item> Other</item>
+    </string-array>
+</resources>

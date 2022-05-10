@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/iv_weightlogo"
+        android:background="@drawable/weightlog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_weightlogo"
+        android:id="@+id/llweight"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorBlack"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="kgs"
+            android:gravity="right"
+            android:id="@+id/edittext_weight"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Date"
+            android:id="@+id/btn_calender_weight"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/llweight"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/myloginbutton"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/btn_weightlog"
+            android:layout_marginTop="10dp"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_weightlog"
+        android:layout_margin="10dp"
+        android:id="@+id/txtview_log"
+        android:layout_centerHorizontal="true"
+        android:text="WEIGHT LOG"
+        android:textSize="20dp"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/llweight2"
+        android:background="@drawable/shade"
+        android:layout_below="@+id/txtview_log"
+        android:weightSum="6">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="DATE"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="2.4"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="WEIGHT"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="2.4"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:text="BMI"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llweight2">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rc_weigh"
+        android:layout_marginBottom="60dp"
+        android:background="@color/lightGray"
+        >
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

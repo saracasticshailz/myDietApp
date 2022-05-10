@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sleep">
+        <item>good</item>
+        <item>every day disturb</item>
+        <item>sometime disturb</item>
+        <item>mostly disturb</item>
+    </string-array>
+</resources>
+

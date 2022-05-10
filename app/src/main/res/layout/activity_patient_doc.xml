@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/l1">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl"
+    android:layout_marginBottom="60dp">
+    <include layout="@layout/layout_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:overScrollMode="ifContentScrolls"
+    android:id="@+id/image"
+    android:visibility="gone"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/ll"
+            android:text="Please wait...it will take while"
+            android:padding="10dp"
+            android:visibility="invisible"
+            android:id="@+id/fb_progressbar" />
+
+
+        <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="5"
+       android:id="@+id/ll"
+       android:visibility="gone"
+       android:layout_below="@+id/image">
+
+
+           <EditText
+               android:id="@+id/edpic"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:drawableRight="@drawable/person"
+               android:hint="Enter Document name here..."
+               android:layout_below="@+id/image"
+
+               android:layout_weight="3.5"
+               android:maxLength="15"/>
+
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1.5"
+           android:text="Add"
+           android:id="@+id/addDoc"/>
+   </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tbl"
+            android:layout_below="@+id/ll"
+            android:orientation="horizontal"
+            android:weightSum="8">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                       />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Document name"
+                        android:gravity="center_horizontal"
+
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="View"
+                        android:gravity="center_horizontal"
+
+                        />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/lightGray"
+            android:layout_below="@+id/tbl"
+            android:layout_marginBottom="80dp">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/rc_patdoc">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/fab_addDoc"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/plusf"
+        app:backgroundTint="@color/colorOrange"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="30dp"
+        />
+</RelativeLayout>
+</LinearLayout>

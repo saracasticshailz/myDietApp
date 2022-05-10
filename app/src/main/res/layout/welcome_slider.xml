@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HEALTH ASSESSMENT"
+        android:id="@+id/tt"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorGray"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:text="SET REALISTIC GOAL BASED ON DETAILED"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt2"
+        android:layout_centerHorizontal="true"
+        android:text="  HEALTH ASSESSMENT"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_l"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tt7"
+        android:background="@drawable/slide4" />
+
+    <TextView
+        android:id="@+id/tt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_l"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="We at Diet4Health believe that knowing and understanding"
+        android:textSize="12dp"
+        android:textStyle="italic"></TextView>
+
+    <TextView
+        android:id="@+id/tt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt4"
+        android:layout_centerHorizontal="true"
+        android:text="our users is our topmost priority."
+        android:textSize="12dp"
+        android:textStyle="italic"></TextView>
+
+    <TextView
+        android:id="@+id/tt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt5"
+        android:layout_centerHorizontal="true"
+        android:text="With extensive data analysis and research"
+        android:textSize="12dp"
+        android:textStyle="italic">
+
+    </TextView>
+</RelativeLayout>
